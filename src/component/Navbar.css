@@ -1,0 +1,176 @@
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 20px 80px;
+    height: 72px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.logo{
+    margin: 0px 30px 0px 0px;
+}
+
+#navul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navul li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #87CEEB;
+    font-style: normal;
+}
+
+
+#navul li a:hover,
+#navul li a.active {
+    color:	#87CEEB;
+}
+
+#navul li a:hover::after, 
+#navul li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #87CEEB;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#log {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #87CEEB;
+    color: #fff;
+    text-decoration: none;
+}
+
+#mobile{
+    display: none;
+}
+
+
+#mobile i {
+    color: #fff;
+
+}
+@media screen and (max-width: 769px){
+.container{
+    display: flex;
+    width: auto;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 769px){
+
+.logo{
+    margin-left: 20px;
+
+}
+
+
+}  
+
+@media screen and (max-width: 769px){
+
+#nav{
+    justify-content: space-between;
+    width: 100%;
+
+} 
+
+#nav.logo{
+    margin-left: 20px;
+}
+    
+
+#navul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #2a3239;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#navul.active{
+    right: 0px;
+
+}
+
+
+
+
+
+#navul li{
+    margin-bottom: 25px;
+}
+
+#mobile{
+    display: block;
+    margin-left: 10px;
+}
+
+#mobile i{
+    font-size: 24px;
+    cursor: pointer;
+}
+}
+
+
+@media screen and (max-width: 769px){
+#log{
+    padding: 2px 15px;
+    margin:  0px 10px;
+    cursor: pointer;
+    font-size: 5px;
+    font-weight: italic;
+    background-color: #87CEEB;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 769px){
+
+.hero-container{
+    flex-direction: row;
+}
+
+}
